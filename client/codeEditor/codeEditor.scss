@@ -1,0 +1,27 @@
+@import '../commonStyles/variables';
+
+.editor {
+  position : relative;
+  width : 100%;
+  height: 50%;
+  background : $editorsColor;
+  border-bottom : 1px solid darken($editorsColor, 20%);
+}
+.title {
+  right: 15px;
+  top : 15px;
+  position : absolute;
+  color : darken($editorsColor, 20%);
+}
+.title:hover{
+  color : darken($editorsColor, 70%);
+}
+.editorArea {
+  padding: 3%;
+  width: 100%;
+  height: 100%;
+  color : darken($editorsColor, 70%);
+}
+.editorArea:focus {
+  outline: none;
+}

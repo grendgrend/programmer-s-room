@@ -1,0 +1,15 @@
+@import '../commonStyles/variables';
+
+.chatForm {
+  padding: 5%;
+  textarea {
+    width : 100%;
+    margin-top:10px;
+  }
+  label {
+    color: darken($chatBackground, 20%);
+  }
+  label:hover {
+    color: darken($chatBackground, 70%);
+  }
+}

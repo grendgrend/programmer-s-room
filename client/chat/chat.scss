@@ -1,0 +1,10 @@
+@import '../commonStyles/variables';
+
+.chat {
+  width: 20%;
+  height: 100%;
+  vertical-align: top;
+  background: $chatBackground;
+  display : inline-block;
+  border : 1px solid darken($chatBackground, 10%);
+}
