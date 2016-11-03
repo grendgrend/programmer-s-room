@@ -35,7 +35,7 @@ module.exports = {
         ]
     },
 
-    postcss: function (webpack) {
+    postcss: function () {
         return [
             require('postcss-modules')({ scopeBehaviour: 'global' }),
             require('postcss-cssnext')({ browsers: ['last 3 versions'] }),
