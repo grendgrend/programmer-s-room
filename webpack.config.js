@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: './client/index.jsx',
@@ -20,20 +20,32 @@ module.exports = {
     },
 
     module : {
-        loaders : [{
+        loaders: [{
             test : /\.jsx$/,
             loader : 'babel-loader',
             query: {
                 presets: ['es2015', 'react']
             }
-        },
-            {
-                test: /\.scss$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader?resolve-url!sass-loader?sourceMap')
-            }
+        }, {
+            test: /\.css$/,
+            loader: ExtractTextPlugin.extract(
+            'style-loader',
+                'css-loader!postcss-loader')
+        }
+        ]
+    },
+
+    postcss: function (webpack) {
+        return [
+            require('postcss-modules')({ scopeBehaviour: 'global' }),
+            require('postcss-cssnext')({ browsers: ['last 3 versions'] }),
+            require('postcss-font-magician')(),
+            require('postcss-mixins')(),
+            require('postcss-advanced-variables')(),
+            require('postcss-nested')()
         ]
     },
     plugins: [
-        new ExtractTextPlugin('app.css')
+        new ExtractTextPlugin("app.css")
     ]
 };

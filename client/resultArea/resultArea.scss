@@ -8,4 +8,9 @@
   position: relative;
   background: $editorsColor;
   border-left : 1px solid darken($editorsColor, 20%);
+  iframe {
+    width: 100%;
+    height: 100%;
+    border:none;
+  }
 }

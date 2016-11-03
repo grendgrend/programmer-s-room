@@ -1,3 +1,4 @@
 .idea/
 node_modules/
 public/
+client/index.css.json

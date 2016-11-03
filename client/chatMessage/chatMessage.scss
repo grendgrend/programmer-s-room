@@ -1,0 +1,14 @@
+@import '../commonStyles/variables';
+
+.chatMessage {
+  padding: 5px;
+  border:1px solid darken($editorsColor, 20%);
+  background: $editorsColor;
+  border-radius: 3px;
+  margin: 5px 0;
+  color: darken($editorsColor, 45%);
+  span {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}

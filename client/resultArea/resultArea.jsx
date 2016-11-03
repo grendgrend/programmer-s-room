@@ -8,6 +8,12 @@ export default class ResultArea extends React.Component {
                 <div className = "title">
                     Result
                 </div>
+                <div className="actions">
+                    
+                </div>
+                <iframe src="result.html">
+
+                </iframe>
             </div>
         );
     }
