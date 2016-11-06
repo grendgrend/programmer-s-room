@@ -1,0 +1,11 @@
+@import '../commonStyles/variables';
+
+@define-mixin title {
+    right: 15px;
+    top : 15px;
+    position : absolute;
+    color : color( $editorsColor blackness(+20%) );
+}
+@define-mixin titleHover {
+    color : color( $editorsColor blackness(+70%) );
+}

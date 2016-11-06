@@ -8,9 +8,9 @@
     padding: 5px;
   }
   label {
-    color: darken($chatBackground, 20%);
+    color: color($chatBackground blackness(+20%));
   }
   label:hover {
-    color: darken($chatBackground, 70%);
+    color: color($chatBackground blackness(+70%));
   }
 }

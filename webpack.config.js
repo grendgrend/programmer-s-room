@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
     entry: './client/index.jsx',
@@ -19,33 +20,37 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     },
 
+    devtool : 'eval',
+
     module : {
         loaders: [{
             test : /\.jsx$/,
-            loader : 'babel-loader',
-            query: {
-                presets: ['es2015', 'react']
-            }
+            loader : 'babel-loader'
         }, {
             test: /\.css$/,
-            loader: ExtractTextPlugin.extract(
-            'style-loader',
-                'css-loader!postcss-loader')
+            loader: ExtractTextPlugin.extract( 'style-loader',  'css-loader?modules=true!postcss-loader')
         }
         ]
     },
 
     postcss: function () {
         return [
-            require('postcss-modules')({ scopeBehaviour: 'global' }),
+            require('postcss-import')(),
+            require('postcss-advanced-variables')(),
             require('postcss-cssnext')({ browsers: ['last 3 versions'] }),
             require('postcss-font-magician')(),
             require('postcss-mixins')(),
-            require('postcss-advanced-variables')(),
             require('postcss-nested')()
         ]
     },
+
     plugins: [
-        new ExtractTextPlugin("app.css")
+        new webpack.NoErrorsPlugin(),
+        new ExtractTextPlugin("app.css"),
+        new BrowserSyncPlugin({
+            host: 'localhost',
+            port: 3000,
+            server: { baseDir: "./" }
+        })
     ]
 };

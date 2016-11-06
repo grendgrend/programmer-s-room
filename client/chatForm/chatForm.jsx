@@ -1,10 +1,10 @@
 import React from 'react';
-import './chatForm.scss';
+import styles from './chatForm.css';
 
 export default class ChatForm extends React.Component {
     render() {
         return (
-            <form className="chatForm">
+            <form className = { styles.chatForm }>
                 <label> Write a message
                 <textarea>
 

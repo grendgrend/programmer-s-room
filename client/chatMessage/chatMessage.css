@@ -2,11 +2,11 @@
 
 .chatMessage {
   padding: 5px;
-  border:1px solid darken($editorsColor, 20%);
+  border:1px solid color($editorsColor blackness(+20%));
   background: $editorsColor;
   border-radius: 3px;
   margin: 5px 0;
-  color: darken($editorsColor, 45%);
+  color: color($editorsColor blackness(+45%));
   span {
     text-decoration: underline;
     font-weight: bold;

@@ -6,5 +6,5 @@
   vertical-align: top;
   background: $chatBackground;
   display : inline-block;
-  border : 1px solid darken($chatBackground, 10%);
+  border : 1px solid color($chatBackground blackness(+10%));
 }

@@ -1,4 +1,5 @@
-@import '../commonStyles/variables';
+@import '../commonStyles/variables.css';
+@import '../commonStyles/mixins.css';
 
 .resultArea {
   display: inline-block;
@@ -7,10 +8,17 @@
   height: 100%;
   position: relative;
   background: $editorsColor;
-  border-left : 1px solid darken($editorsColor, 20%);
+  border-left : 1px solid color($editorsColor blackness(+20%));
   iframe {
     width: 100%;
     height: 100%;
     border:none;
   }
+}
+
+.title {
+@add-mixin title;
+}
+.title:hover{
+@add-mixin titleHover;
 }
