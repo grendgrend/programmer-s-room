@@ -1,4 +1,4 @@
-@import '../commonStyles/variables';
+@import '../commonStyles/variables.css';
 
 .chat {
   width: 20%;

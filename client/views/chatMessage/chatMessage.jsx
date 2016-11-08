@@ -1,7 +1,8 @@
 import React from 'react';
+import BaseComponent from '../baseComponent/baseCoponent';
 import styles from './chatMessage.css';
 
-export default class Message extends React.Component {
+export default class Message extends BaseComponent {
     render() {
         return (
             <div className = { styles.chatMessage }>

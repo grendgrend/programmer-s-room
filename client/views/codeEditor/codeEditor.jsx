@@ -1,7 +1,8 @@
 import React from 'react';
+import BaseComponent from '../baseComponent/baseCoponent';
 import styles from './codeEditor.css';
 
-export default class CodeEditor extends React.Component {
+export default class CodeEditor extends BaseComponent {
     render() {
         let { title } = this.props;
         return (

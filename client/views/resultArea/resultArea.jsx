@@ -1,7 +1,8 @@
 import React from 'react';
+import BaseComponent from '../baseComponent/baseCoponent';
 import styles from './resultArea.css';
 
-export default class ResultArea extends React.Component {
+export default class ResultArea extends BaseComponent {
     render() {
         return (
             <div className = { styles.resultArea }>

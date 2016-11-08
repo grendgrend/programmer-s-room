@@ -1,7 +1,9 @@
-@import '../commonStyles/variables';
+@import '../commonStyles/variables.css';
 
 .chatForm {
   padding: 5%;
+  display : inline-block;
+    vertical-align: bottom;
   textarea {
     width : 100%;
     margin-top:10px;

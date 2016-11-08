@@ -45,6 +45,9 @@ module.exports = {
     },
 
     plugins: [
+        new webpack.DefinePlugin({
+            //Mapper:
+        }),
         new webpack.NoErrorsPlugin(),
         new ExtractTextPlugin("app.css"),
         new BrowserSyncPlugin({

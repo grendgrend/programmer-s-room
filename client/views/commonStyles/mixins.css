@@ -1,4 +1,4 @@
-@import '../commonStyles/variables';
+@import '/variables';
 
 @define-mixin title {
     right: 15px;
