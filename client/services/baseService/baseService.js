@@ -1,7 +1,9 @@
+import AJAX from '../AJAX/AJAX';
+
 export default class BaseService {
 
     cb = [];
-
+    AJAX = new AJAX();
     /**
      * @param {function} cb
      * @return function

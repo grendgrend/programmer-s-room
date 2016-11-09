@@ -14,7 +14,7 @@ export default class AJAX {
                 }
                 return response.json();
             })
-            .catch( ( err ) => console.error( 'Fetch Error :-S', err ) );
+            .catch( ( err ) => console.error( 'Fetch Error ', err ) );
     }
 
     /**

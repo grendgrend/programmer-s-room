@@ -1,7 +1,8 @@
-import AJAX from '../AJAX/AJAX';
 import ChatService from '../chatService/chatService';
+import ResultService from '../resultService/resultService';
 
-export default class Mapper {
-    Ajax = new AJAX();
+class Mapper {
     ChatService = new ChatService();
+    ResultService = new ResultService();
 }
+export default new Mapper();

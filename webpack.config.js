@@ -27,6 +27,10 @@ module.exports = {
             test : /\.jsx$/,
             loader : 'babel-loader'
         }, {
+            test : /\.js$/,
+            loader : 'babel-loader'
+        },
+            {
             test: /\.css$/,
             loader: ExtractTextPlugin.extract( 'style-loader',  'css-loader?modules=true!postcss-loader')
         }
