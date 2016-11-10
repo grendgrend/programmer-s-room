@@ -1,0 +1,15 @@
+@import '../commonStyles/variables.css';
+
+.form {
+    width: 100%;
+    text-align: center;
+    button {
+        color : color( $accent blackness( +90% ));
+        padding : 10px;
+        background: $accent;
+        border : 1px solid color( $accent blackness( +90% ));
+        &:hover {
+            color : black;
+        }
+    }
+}

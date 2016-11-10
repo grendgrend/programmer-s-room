@@ -11,7 +11,7 @@
 .title {
   @add-mixin title;
 }
-.title:hover{
+.editor:hover .title{
   @add-mixin titleHover;
 }
 .editorArea {

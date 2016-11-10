@@ -1,0 +1,21 @@
+@import '../commonStyles/variables.css';
+
+.container {
+    width : 100%;
+    height: 100%;
+    position: relative;
+    background: $editorsColor;
+}
+.creatingRoom {
+    background: $chatBackground;
+    border : 1px solid color( $chatBackground blackness( +40% ));
+    color : color( $editorsColor blackness( +90% ));
+    position : absolute;
+    top : 40%;
+    left : 50%;
+    transform: translate( -50%, -50% );
+    padding: 25px;
+    p {
+
+    }
+}

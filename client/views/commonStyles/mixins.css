@@ -7,5 +7,5 @@
     color : color( $editorsColor blackness(+20%) );
 }
 @define-mixin titleHover {
-    color : color( $editorsColor blackness(+70%) );
+    color : color( $editorsColor blackness(+80%) );
 }

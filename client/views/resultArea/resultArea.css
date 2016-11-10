@@ -19,6 +19,6 @@
 .title {
 @add-mixin title;
 }
-.title:hover{
+.resultArea:hover .title{
 @add-mixin titleHover;
 }

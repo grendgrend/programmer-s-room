@@ -1,12 +1,12 @@
 const webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+//var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
     entry: './client/index.jsx',
 
     output: {
-        path: './public',
+        path: './server/public',
         filename: 'app.js'
     },
 
@@ -53,11 +53,11 @@ module.exports = {
             //Mapper:
         }),
         new webpack.NoErrorsPlugin(),
-        new ExtractTextPlugin("app.css"),
-        new BrowserSyncPlugin({
+        new ExtractTextPlugin("app.css")
+        /*new BrowserSyncPlugin({
             host: 'localhost',
             port: 3000,
             server: { baseDir: "./" }
-        })
+        })*/
     ]
 };

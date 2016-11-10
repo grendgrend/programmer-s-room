@@ -15,7 +15,6 @@ export default class ResultArea extends BaseComponent {
 
     }
     render() {
-        console.log(this.unsubscribe);
         return (
             <div className = { styles.resultArea }>
                 <div className = { styles.title }>
@@ -24,7 +23,7 @@ export default class ResultArea extends BaseComponent {
                 <div className = { styles.actions }>
                     
                 </div>
-                <iframe src="result.html">
+                <iframe>
 
                 </iframe>
             </div>
